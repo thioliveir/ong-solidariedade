@@ -1,0 +1,68 @@
+#course-page .title {
+    font-family: var(--font-montserrat);
+    color: #FFF;
+    font-weight: 900;
+}
+
+#course-page .accordion-button,
+#course-page .nav-tabs {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+}
+#course-page .accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#course-page .accordion-button:hover {
+    background-color: var(--bg-secondary);
+    color: var(--primary-color);
+}
+
+#course-page .accordion-button:not(.collapsed) {
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-active-bg: #3d85f3;
+}
+#course-page .nav-link {
+    --bs-nav-link-color: var(--primary-color);
+}
+#course-page .nav-tabs {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+}
+#course-page .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    --bs-card-bg: #3d85f3;
+    --bs-nav-tabs-link-active-color: #ffffff;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+#course-page .card-body {
+    font-family: var(--font-roboto);
+    background-color: #3d85f3;
+    color: #ffffff;
+}
+#course-page .card-body a {
+    color: rgb(18, 42, 78);
+}
+#course-page .card-body a:hover {
+    color: rgb(51, 60, 73);
+}
+
+@media (min-width: 768px) {
+    #course-page {
+        height: 45vw;
+    }
+}
+@media (min-width: 992px) {
+    #course-page {
+        height: 55vw;
+    }
+    #course-page .accordion-body .img-limit {
+        max-height: 100%;
+        object-fit: contain;
+        width: 100%;
+    }
+    #course-page .accordion-body .col-lg-4 {
+        max-height: 400px;
+        overflow: hidden;
+    }
+}
+
+ 

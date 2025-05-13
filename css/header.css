@@ -1,0 +1,30 @@
+header {
+    background-color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+header .navbar-toggler {
+    border: 2px solid #fff;
+}
+header .bi,
+header .navbar-toggler {
+    color: #fff;
+}
+
+header .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+}
+header .navbar-brand:hover,
+header .navbar-brand:focus {
+    color: #fff;
+}
+#navbarScroll .nav-link {
+    color: #fff;
+    transition: color .3s;
+    font-weight: 400;
+}
+#navbarScroll .nav-link:hover {
+    color: #999696;
+}

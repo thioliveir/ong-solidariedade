@@ -1,0 +1,60 @@
+#home {
+    background: url(../Assets/img/bg-hero.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+#home h1 {
+    font-family: var(--font-montserrat);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+#home h2 {
+    font-size: calc(1.325rem + -0.1vw);
+    font-family: var(--font-poppins);
+    margin-bottom: 4rem;
+    color: #fff
+}
+
+
+#home .btn {
+  text-transform: uppercase;
+  color: #fff;
+  --bs-btn-padding-y: 1.125rem;
+  --bs-btn-padding-x: 1.5rem;
+  border: none;
+  border-radius: .625rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+}
+#home .btn-info:hover {
+    background-color: rgb(50,73,203,1);
+    
+}
+#home .btn-warning:hover {
+    background-color: hsla(0, 0%, 100%, .9);
+}
+#home .btn-warning {
+    color: rgb(130,52,233,1);
+    background-color: rgb(255,255,255,1);
+}
+#home .btn-info {
+    background-color: rgb(72,99,247,1);
+}
+
+@media (min-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    #home h2 {
+        font-size: 2rem;
+    }
+    #home .btn {
+        font-size: 1rem;
+    }
+}

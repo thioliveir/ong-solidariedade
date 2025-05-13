@@ -1,0 +1,12 @@
+/*Bootstrap Icons via CDN*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url(global.css);
+@import url(header.css);
+@import url(home.css);
+@import url(mission.css);
+@import url(course.css);
+@import url(testimonials.css);
+@import url(donate.css);
+@import url(footer.css);
+@import url(course-page.css);
+@import url(login.css);

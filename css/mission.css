@@ -1,0 +1,50 @@
+#mission {
+    background: url(../Assets/img/missao-visao-valores.png) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#mission .container {
+    background-color: rgba(26, 53, 115, 0.85);
+    padding: 1rem;
+}
+#mission h2 {
+    font-family: var(--font-montserrat);
+    color: #FFF;
+    font-weight: 900;
+}
+#mission .card {
+    font-family: var(--font-lora);
+    border: none;
+}
+#mission .card,
+#mission .list-group-item {
+    background: transparent;
+}
+#mission .card-text,
+#mission .list-group {
+    border-left: 3px solid #48ADDC;
+    padding-left: 10px;
+}
+#mission .card-text,
+#mission .list-group-item,
+#mission .card i {
+    color: #FFF;
+}
+#mission .list-group-item {
+    background: transparent;
+    border-bottom: 1px solid #48ADDC;
+}
+#mission .bi {
+    width: 40px;
+}
+
+@media (min-width: 768px) {
+    #mission .container,
+    #mission .card {
+        width: 75%;
+    }
+    #mission .container {
+        padding: 4rem;
+    }
+}

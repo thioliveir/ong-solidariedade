@@ -1,0 +1,25 @@
+#course {
+    background-color: var(--bg-secondary);
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+#course h2 {
+    color: #125292;
+    font-family: var(--font-montserrat);
+    font-weight: 900;
+}
+#course p {
+    font-family: var(--font-opensans);
+}
+#course .card-title {
+    font-family: var(--font-poppins);
+}
+#course .card-text {
+    font-family: var(--font-roboto);
+}
+
+#course .card img {
+    height: 200px;
+    object-fit: cover;
+}
