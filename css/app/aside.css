@@ -1,0 +1,43 @@
+#aside-menu .logo {
+    margin-bottom: 5rem;
+}
+#aside-menu .logo h5 {
+    height: 30px;
+    text-shadow: 1px 1px 2px rgba(255, 254, 254, 0.488);
+}
+#aside-menu #logo {
+    width: 230px;
+    background-image: url(../../Assets/img/Logo_Solidariedade-removebg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+#aside-menu .nav-item {
+    --bs-nav-link-font-weight: 700;
+    border-top-left-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#aside-menu .nav-item:hover {
+    background-color: #cccbcb;
+}
+#aside-menu .nav-item:hover i,
+#aside-menu .nav-item:hover span,
+#aside-menu .nav-item:hover a {
+    color: #5a5959;
+}
+
+#aside-menu .nav-item.active {
+    background-color: #fff;
+}
+#aside-menu .nav-item.active a,
+#aside-menu .nav-item.active span,
+#aside-menu .nav-item.active i {
+    color: #000;
+}
+#aside-menu .nav-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}

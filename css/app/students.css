@@ -1,0 +1,9 @@
+#students .tooltip-btn {
+  --bs-tooltip-bg: #095ED7;
+  --bs-tooltip-color: #fff;
+}
+#students #alert-success,
+#students #alert-danger {
+  display: none;
+}
+

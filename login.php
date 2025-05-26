@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta página é relacionada a ONG Solidariedade com finalidade de inclusão digital jovens e adultos em situação de vulnerabilidade social.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="Assets/img/FavIcon.png" type="image/x-icon">
+    <!--Google Font PreLoad-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>ONG Solidariedade - Cursos</title>
+    <!--Google Fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main id="login-page" class="d-flex flex-column align-items-center justify-content-center">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-5 col-lg-4 col-12 d-flex flex-column text-center gap-md-5">
+                    <h2 class="display-5 fw-bold text-white">Bem-vindo</h2>
+                    <img src="Assets/img/Logo_Solidariedade-removebg.png" alt="Logomarca ONG Solidariedade" class="img-fluid">
+                    <p class="lead text-white">Faça login para acessar o sistema. Se não é cadastrado, procure o Departamento de T.I. para obter seu acesso.</p>
+                    <div class="devs d-none d-md-flex">
+                        <p>CREATOR: <strong>TURMA 02</strong></p>
+                        <p>DESIGNER: <strong>TURMA 02</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 col-12">
+                    
+                    <?php if(isset($_GET['erro'])): ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        <strong>Erro!</strong> <?php echo htmlspecialchars($_GET['erro']); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <?php endif; ?>
+                    
+                    <!-- Alerta de Sucesso (opcional) -->
+                    <?php if(isset($_GET['sucesso'])): ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        <strong>Sucesso!</strong> <?php echo htmlspecialchars($_GET['sucesso']); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <?php endif; ?>
+
+
+                    <form method="POST" action="controllers/auth.php" class="needs-validation" novalidate>
+                        <input type="hidden" name="action" value="login">
+
+                        <div class="row mb-3">
+                            <label for="username" class="col-form-label">Nome de Usuário:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Digite seu nome de usuário" id="username" name="username" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+                                <div class="valid-feedback">
+                                    Correto
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, insira o nome de usuário
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="senha" class="col-form-label">Senha:</label>
+                            <div class="col-sm-10 position-relative">
+                                <input type="password" placeholder="Digite sua senha" class="form-control" id="senha" name="senha" required>
+                                <button type="button" id="togglePassword" class="btn btn-sm btn-outline-secondary position-absolute" tabindex="-1" style="right: 10px; top: 50%; transform: translateY(-50%); z-index: 10;">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <div class="valid-feedback">
+                                    Correto
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, insira a senha
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Acessar o sistema</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--BootStrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!--JavaScript-->
+    <script src="js/login.js"></script>
+</body>
+</html>

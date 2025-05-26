@@ -1,0 +1,13 @@
+#courses .tooltip-btn {
+  --bs-tooltip-bg: #095ED7;
+  --bs-tooltip-color: #fff;
+}
+
+#courses #alert-success,
+#courses #alert-danger {
+  display: none;
+}
+
+#courses textarea {
+  min-height: 100px;
+}

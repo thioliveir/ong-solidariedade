@@ -10,7 +10,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
 // Button toggle password
 document.getElementById("togglePassword").addEventListener("click", function() {
-    const passwordInput = document.getElementById("password")
+    const passwordInput = document.getElementById("senha")
     const icon = document.querySelector("i")
 
     const isPassword = passwordInput.type === "password"
